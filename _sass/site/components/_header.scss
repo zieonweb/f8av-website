@@ -1,7 +1,7 @@
 .main-header {
   //Prevent header from hiding
   &.header-prevent-hide {
-    transform: translateY(0%) !important;
+    transform: translateY(10%) !important;
   }
 
   .header-content {
