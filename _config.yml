@@ -18,21 +18,103 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: {Fecit8 Art Vamps} #Your awesome title
-email: zieonweb@gmail.com #@example.com
+# plugins:
 
+#plugins:
+#  - jekyll-feed
+
+exclude:
+  - readme.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+
+include:
+  - _pages
+  - _redirects
+
+# Site settings
+title: Fecit8 Art Vamps #Your awesome title
+email: zieonweb@gmail.com #@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   We are F8AV and we just love the art - what we see and feel. Our purpose and activities aim to reach POP (Planet Of Peace).
-
-baseurl: "/f8av/" # the subpath of your site, e.g. /blog
+baseurl: "/f8av" # the subpath of your site, e.g. /blog
 url: "https://zieonweb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: f8avzieon
-github_username:  zieonweb
+
+timezone: Australia/Adelaide
+year: 2023
+start-year: 2002
+sitemap: true
+
+# Social networks
+social-username:
+  twitter_username: f8avzieon
+  github_username:  zieonweb
+
+# Content
+image_serve_path: "/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
+
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+#theme: minima
+
+markdown: kramdown
+
+kramdown:
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+######################################
+# Sass output
+sass:
+  style: compressed # :nested :compact :expanded :compressed
+
+compress_html: # http://jch.penibelst.de/
+  enabled: true # compress html
+  clippings: all # clip safe tags
+  comments: []
+  endings: []
+  #ignore:
+    #envs: [local]
+  blanklines: false # boolean - strip blank lines and breaks
+  profile: false
+  startings: []
+
+
+# Structure
+navigation:
+  - title: Projects
+    url: /
+  - title: Fonts
+    url: /fonts
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+
+permalink: /:title/
+
+# Configure site collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  fonts:
+    output: true
+    permalink: /fonts/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "fonts"
+    values:
+      layout: "font"
+
+######################################
 
 # Exclude from processing.
 # The following items will not be processed, by default.
