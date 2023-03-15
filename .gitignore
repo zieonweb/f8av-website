@@ -3,3 +3,12 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+images
+android-chrome-192x192.svg
+android-chrome-256x256.svg
+android-chrome-512x512.svg
+apple-touch-icon.svg
+favicon-16x16.svg
+favicon-32x32.svg
+mstile-150x150.svg
+safari-pinned-tab.svg
