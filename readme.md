@@ -1,6 +1,6 @@
-# himatt.com
+# F8AV websie with jekyll
 
-Personal portfolio made with [Jekyll](https://jekyllrb.com/), [GitHub](https://github.com/zieonweb), hosting and IPFS Gateway via [Fleek](https://github.com/zieonweb)
+Personal portfolio made with [Jekyll](https://jekyllrb.com/), [GitHub](https://github.com/zieonweb), hosting and IPFS Gateway via [Fleek]
 
 ## Setup
 
